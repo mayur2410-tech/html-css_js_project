@@ -1,0 +1,139 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url("Title-Image.png" );
+    background-color: black;
+  background-repeat: no-repeat;
+}
+.left_side{ 
+    color: rgb(186, 186, 186);
+}
+#lists{
+    display: grid;
+    grid-template-columns: repeat(5,60px);
+    margin-left: 160px;
+    margin-top: -30px;
+    column-gap: -9px;
+}
+.right_side{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(5,36px);
+    margin-top: -19px;
+}
+.N{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 340px;
+    margin-left:60px ;
+}
+h4{
+  margin-top: -1px;  
+  margin-left: 10px;
+  color: white;
+}
+h1{
+    margin-left: 50px;
+    font-size: 140px;
+    margin-top: -25px;
+    color: white;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2,80px);
+    margin-left: 60px;
+    margin-top: -100px;
+    column-gap: 20px;
+}
+.playbut{
+    background-color: white;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 30px;
+    border-radius: 3px;
+}
+.playbut.info{
+    width: 100px;
+    background-color: rgb(165, 164, 164);
+    border-radius: 3px;
+    padding-top: 4px;
+    padding-left: 3px;   
+}
+.strip{
+    display: grid;
+    grid-template-columns: repeat(5,150px);
+    column-gap:120px ;
+   margin: 0px 0px 0px 60px  ;
+   
+    height: 200px;
+}
+p{
+    margin-left: 55px ;
+    font-size: 20px;
+    color: white;
+    margin-top: 75px;
+}
+.top10{
+    color: white;
+    margin-left: 55px ;
+    font-size: 20px;
+    margin-top: -19px;
+}
+.rank{
+    display: grid;
+    grid-template-columns: repeat(6,50px);
+    column-gap:217px ;
+    height: 1px;
+    margin-top: 40px;
+}
+.rank.img{
+    column-gap: 217px;
+    margin-left: 145px;
+
+    margin-top: 8px;   
+}
+.Trending{
+    color: white;
+    margin-left: 55px ;
+    font-size: 20px;
+    margin-top: 230px;
+}
+.strip.T{
+    margin-top: 20px;
+}
+.Sci-fi-Shows{
+    color: white;
+    font-size: 20px;
+    margin-left: 55px;
+}
+.socialmedia{
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    margin-left:305px ;
+    filter: grayscale(100%) brightness(0.5);  
+}
+.footer{
+    margin-left: 305px;
+    color: rgb(131, 130, 130);
+    display: grid;
+    grid-template-columns: repeat(4,255px);
+    row-gap: 20px;
+    margin-top: 15px;  
+}
+.lastend{
+    margin-left: 305px;
+    color: rgb(131, 130, 130);
+    margin-top: 30px;
+    display: grid;
+    
+    row-gap: 15px;   
+}
+#box{
+    border: 1px solid white;
+    width: 100px;
+   padding: 8px;
+}
