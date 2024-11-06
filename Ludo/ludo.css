@@ -1,0 +1,137 @@
+.ludo {
+ 
+    height: 498px;
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 498px;
+}
+
+.red {
+    border: 30px solid red;
+    height: 140px;
+    width: 140px;
+   
+
+}
+
+.circle {
+
+    display: grid;
+    grid-template-columns: 10px 10px;
+    column-gap: 60px;
+    row-gap: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.circle1 {
+    border-radius: 50%;
+    border: 3px solid red;
+    height: 40px;
+    width: 40px;
+}
+
+.green {
+    border: 30px solid #008002;
+    height: 140px;
+    width: 137px;
+
+    margin-left: 300px;
+    margin-top: -200px;
+}
+
+.circle1.g {
+    border: 3px solid#008002;
+}
+
+.lines {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 33px);
+    grid-template-rows: repeat(6, 33px);
+    margin-left: 200px;
+    margin-top: -200px;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.box.g {
+    background-color: #008002;
+}
+
+.box.r {
+    background-color: red;
+}
+
+.hrlines {
+    display: grid;
+    grid-template-columns: repeat(6, 33px);
+    grid-template-rows: repeat(3, 33px);
+}
+
+.ludo_home {
+    height: 0px;
+    width: px;
+    float: left;
+    border-left: 50px solid red;
+    border-right: 50px solid yellow;
+    border-top: 50px solid #008002;
+    border-bottom: 50px solid blue;
+    margin-left: 198px;
+    margin-top: -100px;
+}
+
+.hrlinesy {
+    display: grid;
+    grid-template-columns: repeat(6, 33px);
+    grid-template-rows: repeat(3, 33px);
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+.box.y {
+    background-color: yellow;
+}
+
+.blue {
+    border: 30px solid blue;
+    height: 140px;
+    width: 139px;
+}
+
+.circle1.b {
+    border: 3px solid blue;
+}
+
+.lines.b {
+  
+    border: 2px solid purple;
+    margin-left: 50px;
+}
+.yellow{
+    border: 30px solid yellow;
+    height: 140px;
+    width: 139px;
+    margin-left: 299px;
+    margin-top: -200px;
+}
+.circle1.y{
+    border: 3px solid yellow;
+}
+.ylines{
+    display: grid;
+    grid-template-columns: repeat(3, 33px);
+    grid-template-rows: repeat(6, 33px);
+    margin-left:-130px;
+    margin-top: -157px;
+}
+.box.b{
+    background-color: blue;
+}
+.star{
+    height: 30px;
+   
+}

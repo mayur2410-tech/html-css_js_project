@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel ID Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        img {
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hostel ID Search</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="searchID()">Search</button>
+
+    <div id="result"></div>
+    <button id="downloadBtn" style="display: none;" onclick="downloadImage()">Download Image</button>
+
+    <script>
+        // Storing the names and ID photo URLs in JavaScript
+        const ids = {
+            "mayur": "WhatsApp Image 2024-10-21 at 2.07.48 PM.jpeg",
+            "jeevan": "WhatsApp Image 2024-10-21 at 9.52.57 PM.jpeg", // Add more students here
+            // "student_name": "image_path.jpeg"
+        };
+
+        // Function to search for the ID based on the name entered
+        function searchID() {
+            const name = document.getElementById("nameInput").value.trim().toLowerCase(); // Trim and lowercase
+            const resultDiv = document.getElementById("result");
+            const downloadBtn = document.getElementById("downloadBtn");
+
+            if (ids[name]) {
+                // If the name is found, display the ID photo
+                resultDiv.innerHTML = `<img id="idPhoto" src="${ids[name]}" alt="ID Photo">`;
+                downloadBtn.style.display = 'inline-block'; // Show the download button
+            } else {
+                // If the name is not found, show an error message
+                resultDiv.innerHTML = "ID not found.";
+                downloadBtn.style.display = 'none'; // Hide the download button
+            }
+        }
+
+        // Function to download the displayed image
+        function downloadImage() {
+            const img = document.getElementById("idPhoto");
+            const link = document.createElement("a");
+            link.href = img.src; // Set the link's href to the image source
+            link.download = img.src.split('/').pop(); // Set the filename to the image's filename
+            document.body.appendChild(link); // Append the link to the body
+            link.click(); // Simulate a click to trigger the download
+            document.body.removeChild(link); // Remove the link after download
+        }
+    </script>
+
+</body>
+</html>

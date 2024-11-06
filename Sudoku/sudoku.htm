@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(9,50px);
+           grid-template-rows: repeat(9,50px);
+            
+        }
+        .box{
+            border: 1px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;          
+    
+        }
+        .sudoku{
+            margin-top: 100px;
+            margin-left: 200px;
+            width: 450px;
+           
+        }
+        .box:nth-child(3n){
+            border-right: 2px solid black;
+        }
+        .box1:nth-child(3n){
+            border-bottom: 2px solid black;
+        }
+        .box.color{
+            background-color: rgb(74, 202, 159);
+        }
+        h1{
+            margin-left: 160px;  
+        }
+        .sudoku2{
+            margin-top: -530px;
+            margin-left: 800px;
+            width: 450px;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="sudoku">
+        <h1>SUDOKU</h1>
+        <div class="box1">
+        <div class="box">8</div>
+        <div class="box"></div>
+        <div class="box">6</div>
+        <div class="box color"></div>
+        <div class="box color"></div>
+        <div class="box color">3</div>
+        <div class="box"></div>
+        <div class="box">9</div>
+        <div class="box"></div>
+
+
+        <div class="box"></div>
+        <div class="box">4</div>
+        <div class="box"></div>
+        <div class="box color"></div>
+        <div class="box color">1</div>
+        <div class="box color"></div>
+        <div class="box"></div>
+        <div class="box">6</div>
+        <div class="box">8</div>
+       
+        <div class="box">2</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box color">8</div>
+        <div class="box color">7</div>
+        <div class="box color"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">5</div>
+       
+        <div class="box color">1</div>
+        <div class="box color"></div>
+        <div class="box color">8</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">5</div>
+        <div class="box color"></div>
+        <div class="box color">2</div>
+        <div class="box color"></div>
+       
+        <div class="box color"></div>
+        <div class="box color">3</div>
+        <div class="box color"></div>
+        <div class="box">1</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box color"></div>
+        <div class="box color">5</div>
+        <div class="box color"></div>
+       
+        <div class="box color">7</div>
+        <div class="box color"></div>
+        <div class="box color">5</div>
+        <div class="box"></div>
+        <div class="box">3</div>
+        <div class="box"></div>
+        <div class="box color">9</div>
+        <div class="box color"></div>
+        <div class="box color"></div>
+       
+        
+        <div class="box "></div>
+        <div class="box">2</div>
+        <div class="box">1</div>
+        <div class="box color"></div>
+        <div class="box color"></div>
+        <div class="box color">7</div>
+        <div class="box"></div>
+        <div class="box">4</div>
+        <div class="box"></div>
+       
+        <div class="box">6</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box color"></div>
+        <div class="box color">2</div>
+        <div class="box color"></div>
+        <div class="box">8</div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+        <div class="box"></div>
+        <div class="box">8</div>
+        <div class="box">7</div>
+        <div class="box color">6</div>
+        <div class="box color"></div>
+        <div class="box color">4</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">3</div>
+       
+
+       
+       </div>
+</div> 
+
+  
+    <div class="sudoku2">
+        <h1>ANSWER</h1>
+        <div class="box1">
+        <div class="box">8</div>
+        <div class="box">7</div>
+        <div class="box">6</div>
+        <div class="box color">5</div>
+        <div class="box color">4</div>
+        <div class="box color">3</div>
+        <div class="box">1</div>
+        <div class="box">9</div>
+        <div class="box">2</div>
+
+
+        <div class="box">5</div>
+        <div class="box">4</div>
+        <div class="box">3</div>
+        <div class="box color">2</div>
+        <div class="box color">1</div>
+        <div class="box color">9</div>
+        <div class="box">7</div>
+        <div class="box">6</div>
+        <div class="box">8</div>
+       
+        <div class="box">2</div>
+        <div class="box">1</div>
+        <div class="box">9</div>
+        <div class="box color">8</div>
+        <div class="box color">7</div>
+        <div class="box color">6</div>
+        <div class="box">4</div>
+        <div class="box">3</div>
+        <div class="box">5</div>
+       
+        <div class="box color">1</div>
+        <div class="box color">9</div>
+        <div class="box color">8</div>
+        <div class="box">7</div>
+        <div class="box">6</div>
+        <div class="box">5</div>
+        <div class="box color">3</div>
+        <div class="box color">2</div>
+        <div class="box color">4</div>
+       
+        <div class="box color">4</div>
+        <div class="box color">3</div>
+        <div class="box color">2</div>
+        <div class="box">1</div>
+        <div class="box">9</div>
+        <div class="box">8</div>
+        <div class="box color">6</div>
+        <div class="box color">5</div>
+        <div class="box color">7</div>
+       
+        <div class="box color">7</div>
+        <div class="box color">6</div>
+        <div class="box color">5</div>
+        <div class="box">4</div>
+        <div class="box">3</div>
+        <div class="box">2</div>
+        <div class="box color">9</div>
+        <div class="box color">8</div>
+        <div class="box color">1</div>
+       
+        
+        <div class="box ">3</div>
+        <div class="box">2</div>
+        <div class="box">1</div>
+        <div class="box color">9</div>
+        <div class="box color">8</div>
+        <div class="box color">7</div>
+        <div class="box">5</div>
+        <div class="box">4</div>
+        <div class="box">6</div>
+       
+        <div class="box">6</div>
+        <div class="box">5</div>
+        <div class="box">4</div>
+        <div class="box color">3</div>
+        <div class="box color">2</div>
+        <div class="box color">1</div>
+        <div class="box">8</div>
+        <div class="box">7</div>
+        <div class="box">9</div>
+
+
+        <div class="box">9</div>
+        <div class="box">8</div>
+        <div class="box">7</div>
+        <div class="box color">6</div>
+        <div class="box color">5</div>
+        <div class="box color">4</div>
+        <div class="box">2</div>
+        <div class="box">1</div>
+        <div class="box">3</div>
+       
+
+       
+       </div>
+</div> 
+
+  
+           
+
+</body>
+</html>

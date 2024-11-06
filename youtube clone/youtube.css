@@ -1,0 +1,153 @@
+body {
+    background-color: black;
+}
+
+div{
+    color: white;
+    margin-left: 30px;
+    margin-top: -23px;
+}
+#logo{
+    margin-left: 18px;
+}
+
+.text{
+    color: white;
+    /* margin-left: 50px; */
+    margin-top: -23px;
+    font-size: 18px;
+    margin-left: 42px;
+}
+.container1{
+    margin-top: 10px;
+   
+    width: 250px;
+    height: 97vh;
+   
+    
+}
+#home{
+    margin-top: 15px;
+}#explore{
+    margin-top: -10px;
+}
+#shorts{
+    margin-top: -9px;
+}
+#subscription{
+    margin-top: -5px;
+}
+#library{
+    margin-top: -5px;
+}
+#History{
+    margin-top: -10px;
+}
+#yourviedo{
+    margin-top: -20px;
+}
+#watchlater{
+    margin-top: -10px;
+}
+#likedviedo{
+    margin-top: -10px;}
+#Showmore{
+    margin-top: -10px;
+    
+    
+}
+#SUBSCRIPTIONS{
+    margin-left:9.3px ;
+    opacity: 0.5;
+}
+hr{
+    width: 270px;
+    margin-left: -40px;
+    opacity: 0.2;
+}#explore{
+    margin-top: -1px;
+}
+.searchbox{
+    border: 1px solid rgb(63, 60, 60);
+    margin-top: -675px;
+    width: 360px;
+    height: 28px;
+    margin-left: 470px;
+    border-right-width:55px ;
+    
+}
+#searchlens{
+    margin-top: 25px;
+    margin-left: 340px;
+    
+}
+#search{  margin-left: 9px;
+    margin-top: -25px;
+  
+}
+#mic{
+    margin-left: 390px;
+    margin-top: -5px;
+}
+#create{
+    margin-top:-155px ;
+    margin-left:600px ;
+}
+.hr1{
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 300px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-left: 270px;
+   
+   
+}
+.navtext{
+    
+    border-radius: 40px;
+    background-color:rgb(63, 60, 60) ;
+    height: 20px;
+    text-align: center; 
+  
+}
+.navtext.all{
+    width: 40px;
+    background-color: white;
+    color: black;
+}
+.hr1.hr{
+    margin-top: 10px;
+}
+.strip{
+    display: grid;
+    grid-template-columns: repeat(4,260px);
+    margin-top: 45px;
+    margin-left: 270px;
+    /* border: 2px solid red; */
+    height: 200px;
+}
+.thumbnail{
+    font-size: 14px;
+    margin-top: -11px;
+   margin-left: 25px;
+    color: grey;
+}
+.verify{
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+}
+#logo1{
+    margin-left: 1px;
+    margin-top: 5px;
+}
+.mayur{
+    margin-left: 39px;
+    margin-top: -26px;
+    font-size: 15px;
+}
+

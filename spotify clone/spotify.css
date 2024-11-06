@@ -1,0 +1,185 @@
+
+.logo{
+    height: 45px;
+    width: 150px;
+    margin-left: 20px;
+}
+.home{
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 29px;
+}
+.cointainer1{
+    background-color: black;
+    height: 85vh;
+    width: 270px;
+}
+.text{
+    color:white;
+    margin-top: -22px;
+    margin-left: 72px;
+    font-size: 19px; 
+}
+.Search{
+    height: 20px;
+    margin-top: -10px;
+    margin-left: 29px;
+}
+.create{
+    /* margin-top: px; */
+    margin-left: 31px;
+    height: 20px;
+}
+.text1{
+color: white;
+margin-left: 33px;
+font-size: 20px;
+margin-top:-10px ;
+}
+.install{
+    
+    margin-left: 31px;
+    height: 20px;
+    margin-top: -10px;
+
+}
+.homearound{
+   
+    height: 28px;
+    width: 190px;
+    margin-left: 20px;
+    margin-top: -537px;
+    background-color: #262626;
+    border-radius: 6px;
+}
+.toparrow{
+    margin-top:-10px;
+    margin-left: 265px;
+    height: 30px;
+}
+.cointainer2{
+    /* border: 2px solid red; */
+    margin-top: -570px;
+    margin-left: 50px;
+}
+.user{
+    margin-left: 750px;
+    margin-top: -10px;
+}
+.good{
+   color: white;
+   margin-left: 265px;
+   margin-top:1px;
+}
+.cointainer3{
+     margin-left: 276px;
+    height: 455px;
+   
+    
+}
+.likedviedo{
+   
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+  row-gap: 10px;
+  
+    width: 230px;
+    height: 61px;
+    margin-left:45px ;
+    background-color: #262626;
+
+}
+.liked1{
+    height: 60px;
+    
+    
+    }
+    .liked2{
+        color: white;
+        margin-top:-45px;
+        margin-left: 80px;
+        font-size: 20px;
+        
+    }
+    .card{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+       margin-top:50px ;
+        margin-left: 360px;
+        /* border: 2px solid red; */
+        
+    }
+    .border{
+        width: 100px;
+        height: 120px;
+        padding: 10px
+    }
+    .jee{
+      
+        /* border: 2px solid red; */
+        width: 120px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .description{
+        color: white;
+    }
+    .whole{
+    
+        height:94vh;
+        width: 1349px;
+        background-color: #0E0E0E;
+    }
+    h2{
+        color: white;
+        margin-left: 320px;
+        margin-top:-300px;
+    }
+       h4{
+        color:grey;
+        margin-left: 1250px;
+        margin-top: -40px;
+
+       }
+       .footer{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        margin-top: -80px;
+        background-color: #121212;
+       }
+       .footer1{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        width: 300px;
+        margin-left:50px;
+        height: 55px;
+       
+       }
+       .xx{
+        height: 50px;
+        margin-left: 15px;
+       }
+       #Netflix{
+        color: white;
+        margin-top: 6px;
+        margin-left: 30px;
+       }
+        #dil{
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 12px; 
+       }
+       .footer2{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        width: 500px;
+       margin-left: 500px;
+        height: 55px;
+               }
+               .xxx{
+                height: 60px;
+               }

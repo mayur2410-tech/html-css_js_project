@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel ID Search</title>
+</head>
+<style>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    
+   
+}
+
+
+
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    
+    background: linear-gradient(145deg, #f1f1f1, #e6e6e6);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #c1c1c1, 
+                -6px -6px 12px #ffffff;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #e6e6e6, #f1f1f1);
+    box-shadow: 3px 3px 6px #c1c1c1, 
+                -3px -3px 6px #ffffff;
+    transform: translateY(-3px);
+}
+
+button:active {
+    box-shadow: inset 3px 3px 6px #c1c1c1, 
+                inset -3px -3px 6px #ffffff;
+    transform: translateY(3px);
+}
+
+
+#result {
+   
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+h1{
+    color: rgb(40, 40, 40);
+   
+}
+
+</style>
+<body>
+    <div class="cointainer">
+    <h1>Search Your Hostel ID</h1>
+    <input type="text" id="nameInput" placeholder = "Enter your name">
+    <button onclick="searchID()">Search</button>
+    
+    <div id="result"></div>
+</div>
+
+    <script>
+        
+        function searchID() {
+            const name = document.getElementById("nameInput").value.toLowerCase();
+            const ids = {
+               
+                "mayur waykar": "WhatsApp Image 2024-10-21 at 2.07.48 PM.jpeg",
+
+                "jeevan kadam": "WhatsApp Image 2024-10-21 at 9.52.57 PM.jpeg",
+                "nagesh jagtap": "WhatsApp Image 2024-10-21 at 9.52.56 PM (1).jpeg",
+                "ashwani kumar" : "WhatsApp Image 2024-10-21 at 9.52.54 PM (1).jpeg",
+                "anand kudke": "WhatsApp Image 2024-10-21 at 9.52.55 PM (1).jpeg",
+                "ankit singh":"WhatsApp Image 2024-10-21 at 9.52.55 PM.jpeg " ,
+                "aditya ray": "WhatsApp Image 2024-10-21 at 9.52.56 PM.jpeg",
+                "hitesh prajapati": "WhatsApp Image 2024-10-21 at 9.53.18 PM.jpeg",
+                "shubham modi": "WhatsApp Image 2024-10-21 at 9.52.54 PM.jpeg",
+            };
+            
+            const resultDiv = document.getElementById("result");
+            if (ids[name]) {
+                resultDiv.innerHTML= `<img src="${ids[name]}" alt="ID Photo">`;
+            } else {
+                resultDiv.innerHTML = "ID not found.";
+            }
+        }
+    </script>
+</body>
+</html>
