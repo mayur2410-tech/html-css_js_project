@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient Color Maker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .controls {
+            border: 2px solid black;
+            width: 650px;
+            height: 460px;
+            background-color: white;
+            margin-left: 28%;
+            margin-top: 8%;
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #preview {
+            width: 300px;
+            height: 120px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 70px;
+            margin-top: 10px;
+            resize: none;
+        }
+
+        .mayur {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #generate {
+            width: 150px;
+            margin-top: 10px;
+        }
+
+        #copy {
+            margin-top: 20px;
+        }
+
+        button {
+            height: 30px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        #h1{
+            font-size: 2rem;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        @media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    .controls {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        padding: 10px;
+    }
+
+    #preview {
+        width: 200px;
+        height: 80px;
+    }
+
+    textarea {
+        width: 200px;
+        height: 50px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #h1 {
+        font-size: 1.2rem;
+    }
+}
+    </style>
+</head>
+<body id="body">
+    <div class="controls">
+        <h1 id="h1">Linear Gradient Color Maker</h1>
+        <div class="colors">
+            <label for="color1">Color 1:</label>
+            <input type="color" id="color1" value="#ff0000">
+
+            <label for="color2">Color 2:</label>
+            <input type="color" id="color2" value="#0000ff">
+
+            <label for="angle">Angle:</label>
+            <input type="range" id="angle" min="0" max="360" value="90">
+            <span id="angleValue">90°</span>
+        </div>
+
+        <div id="preview"></div>
+
+        <div class="mayur">
+            <button id="generate">Generate CSS</button>
+            <textarea id="output" readonly></textarea>
+            <button id="copy">Click to Copy</button>
+        </div>
+    </div>
+
+    <script>
+        // Select elements
+        const color1 = document.getElementById('color1');
+        const color2 = document.getElementById('color2');
+        const angle = document.getElementById('angle');
+        const angleValue = document.getElementById('angleValue');
+        const preview = document.getElementById('preview');
+        const output = document.getElementById('output');
+        const generateButton = document.getElementById('generate');
+        const copyButton = document.getElementById('copy');
+        const body= document.getElementById('body')
+        const h1 = document.getElementById('h1');
+
+        // Function to update the gradient preview
+        function updateGradient() {
+            const gradient = `linear-gradient(${angle.value}deg, ${color1.value}, ${color2.value})`;
+            preview.style.background = gradient;
+            body.style.background=gradient
+            h1.style.background = gradient;
+            h1.style.backgroundClip = "text";
+            h1.style.webkitBackgroundClip = "text";
+        }
+
+        // Function to generate the CSS code
+        function generateCSS() {
+            const cssCode = `background: linear-gradient(${angle.value}deg, ${color1.value}, ${color2.value});`;
+            output.value = cssCode;
+        }
+
+        // Event listeners
+        angle.addEventListener("input", () => {
+            angleValue.textContent = `${angle.value}°`;
+            updateGradient();
+        });
+
+        color1.addEventListener("input", updateGradient);
+        color2.addEventListener("input", updateGradient);
+
+        generateButton.addEventListener("click", generateCSS);
+
+        copyButton.addEventListener("click", () => {
+            if (output.value) {
+                navigator.clipboard.writeText(output.value)
+                    .then(() => alert("CSS code copied to clipboard!\n You can paste it into your CSS file."))
+                    .catch(() => alert("Failed to copy CSS code."));
+            } else {
+                alert("No CSS code to copy! Generate it first.");
+            }
+        });
+
+        // Initialize the gradient preview on page load
+        updateGradient();
+    </script>
+</body>
+</html>
